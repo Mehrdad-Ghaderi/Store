@@ -8,8 +8,15 @@ import java.util.Set;
  * Time: 12:54 PM
  */
 public class Product {
-    private String stockKeepingUnit;
-    private String name;
-    private String manufacturer;
-    private Set<Category> categories;
+    private final String stockKeepingUnit;
+    private final String name;
+    private final String manufacturer;
+    private final Category category;
+
+    public Product(String stockKeepingUnit, String name, String manufacturer, Category category) {
+        this.stockKeepingUnit = stockKeepingUnit;
+        this.name = name;
+        this.manufacturer = manufacturer;
+        this.category = category;
+    }
 }
