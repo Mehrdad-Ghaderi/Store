@@ -6,5 +6,5 @@ package org.example;
  * Time: 1:43 PM
  */
 public enum Category {
-    PRODUCE, DAIRY, GROCERY
+    PRODUCE, DAIRY, CEREAL, MEAT, BEVERAGE, GRAIN, BAKERY, CONDIMENT
 }

@@ -9,6 +9,6 @@ public record Product(String stockKeepingUnit, String name, String manufacturer,
 
     @Override
     public String toString() {
-        return "P{" + name + '\'' + manufacturer + '\'' + category + '}';
+        return name;
     }
 }
