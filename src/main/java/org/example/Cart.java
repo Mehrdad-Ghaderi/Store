@@ -38,6 +38,10 @@ public class Cart {
         return cartDate;
     }
 
+    public Map<String, Integer> getProducts() {
+        return products;
+    }
+
     public void addItem(InventoryItem inventoryItem, int qty) {
         products.merge(inventoryItem.getProduct().stockKeepingUnit(), qty, Integer::sum);
         if (!inventoryItem.reserveItem(qty)) {
@@ -58,7 +62,7 @@ public class Cart {
         inventoryItem.releaseItem(qty);
     }
 
-    public void printSaleSlip(Map<String, InventoryItem> inventory) {
+    public void printSalesSlip(Map<String, InventoryItem> inventory) {
         double totalPrice = 0;
         System.out.println("-".repeat(40));
 
